@@ -1,0 +1,26 @@
+//Create an Array of Char type an store 10 elements in Array.
+import java.util.Scanner;
+class ArrayChar
+{
+    public static void main(String[] args)
+    {    
+       //datatype []variablename=new datatype[size];
+            char char_array[]= new char[10]; 
+
+        //Creating a Scanner object of char for user input
+             System.out.println("Enter the elements of Array:-");
+             Scanner sc= new Scanner(System.in);
+
+        // Taking user input for each Char in the array
+        for (int i=0;i<char_array.length;i++) 
+        {
+            char_array[i] = sc.next( ).charAt(0);
+        }
+       //Printing all the Character whatever we insert through user input
+       for(int m=0;m<char_array.length;m++)
+       {
+          System.out.println("The Character is:"+char_array[m]);
+       }
+
+    }
+}
