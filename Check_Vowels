@@ -1,0 +1,30 @@
+//Create an array which is going to take user input and check which element in array and vowel if its vowel then count how much vowels are present.
+import java.util.Scanner;
+class VowelsArray
+{
+    public static void main(String[] args)
+    {    
+       //datatype []variablename=new datatype[size];
+            char vowel[]= new char[5]; 
+
+        //Creating a Scanner object of char for user input
+             System.out.println("Enter the Char of Array:-");
+             Scanner sc= new Scanner(System.in);
+
+        // Taking user input for each Char in the array
+        for (int i=0;i<vowel.length;i++) 
+        {
+            vowel[i] = sc.next( ).charAt(0);
+        }
+        int c=0;
+       //Printing all the Character And check wheather that is vowel or not.
+       for(int m=0;m<vowel.length;m++)
+       {
+          if(vowel[m]=='a'||vowel[m]=='e'||vowel[m]=='i'||vowel[m]=='o'||vowel[m]=='u')
+          { 
+           c++;    
+          }
+       }
+          System.out.println("The Character is:"+c);
+    }
+}
