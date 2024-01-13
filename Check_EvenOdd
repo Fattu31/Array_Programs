@@ -1,0 +1,29 @@
+//Create an Array of int type and check wheather that number is even or odd.
+import java.util.Scanner;
+class ArrayOddEven
+{
+    public static void main(String[] args)
+    {    
+       //datatype []variablename=new datatype[size];
+            int oddeven[]= new int[5]; 
+
+        //Creating a Scanner object of number for user input
+             System.out.println("Enter the elements of Array:-");
+             Scanner sc= new Scanner(System.in);
+
+        // Taking user input for each number in the array
+        for (int i=0;i<oddeven.length;i++) 
+        {
+            oddeven[i] = sc.nextInt( );
+        }
+       //Print all the number and check wheather that is even or odd.
+       for(int m=0;m<oddeven.length;m++)
+       {
+          if(oddeven[m]%2==0)
+          {
+          System.out.println("The Even Number is:"+oddeven[m]);
+          }
+       }
+
+    }
+}
