@@ -1,0 +1,31 @@
+//Write a program on Selection sort and print the output.
+import java.util.Scanner;
+class Selection_Sort
+{
+     public static void main(String[]args)
+     {
+       //Single line Declaration+intilization
+        int a[]={12,13,1,2,5,8,28,30,3};
+         int n=a.length;
+       // This loop for sort the values in Acsending Order
+         for(int i=0;i<n-1;i++)//Outer for loop
+         {
+            int min=i;
+            for(int j=i+1;j<n;j++)//Inner for loop
+            {
+               if(a[j]<a[min])
+                {
+                  min=j;
+                }
+            }
+                int tem=a[min];
+                a[min]=a[i];
+                a[i]=tem;
+         }
+         //Print sorting values
+            for(int i=0;i<a.length;i++)
+            {
+                System.out.println(a[i]);
+            }
+     }
+}
